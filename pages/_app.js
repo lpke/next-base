@@ -12,8 +12,8 @@ class App extends React.Component {
       <>
 
         <Head>
-          <title>Oran Park Town</title>
-          <link rel="icon" href="icons/favicons/opt-favicon.ico" />
+          <title>Website</title>
+          {/*<link rel="icon" href="" />*/}
         </Head>
 
         <Wrapper>

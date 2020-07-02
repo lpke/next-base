@@ -6,12 +6,8 @@ class Home extends React.Component {
     return (
       <>
 
-        <Head>
-          <title>Oran Park Town</title>
-        </Head>
-
-        <h1>Oran Park Town</h1>
-        <p>Future site here.</p>
+        <h1>NextJS Base.</h1>
+        <p>Future website here.</p>
 
       </>
     );

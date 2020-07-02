@@ -1,2 +1,2 @@
-# Oran Park Town
-Root directory for the future Oran Park Town website. Accessible from [staging.oranparktown.com.au](https://staging.oranparktown.com.au).
+# NextJS Base
+Base template/structure for building websites with [React](https://reactjs.org/)/[NextJS](https://nextjs.org/) and deploying on the [Vercel](https://vercel.com) platform.

@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    // Allow imports using root directory as base of url
     "baseUrl": "."
   }
 }
