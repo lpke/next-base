@@ -1,0 +1,32 @@
+:root {
+  // Base colors
+}
+
+//#region -> Import Fonts
+@font-face {
+  font-family: 'GothamPro';
+  src: url(../public/fonts/GothamPro.ttf) format('truetype');
+  font-weight: normal; //400 regular
+}
+@font-face {
+  font-family: 'GothamPro';
+  src: url(../public/fonts/GothamPro-Black.ttf) format('truetype');
+  font-weight: 900; //black
+}
+@font-face {
+  font-family: 'GothamPro';
+  src: url(../public/fonts/GothamPro-Medium.ttf) format('truetype');
+  font-weight: bold; //500 medium
+}
+@font-face {
+  font-family: 'GothamPro';
+  src: url(../public/fonts/GothamPro-Light.ttf) format('truetype');
+  font-weight: 300; //light
+}
+//#endregion <-
+
+* {
+  font-family: 'GothamPro', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: subpixel-antialiased;
+  box-sizing: border-box;
+}
