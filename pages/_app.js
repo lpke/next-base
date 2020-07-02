@@ -1,4 +1,6 @@
 import Head from 'next/head';
+import Wrapper from 'layouts/_wrapper';
+import 'styles/global.scss';
 
 class App extends React.Component {
 
