@@ -1,14 +1,20 @@
-class Wrapper extends React.Component {
+import { useState, useEffect } from 'react';
+
+function Wrapper(props) {
   
-  render() {
-    return (
+  return (
+    <>
       <div className="layout-wrapper">
-
-        {this.props.children}
-
+        {props.children}
       </div>
-    );
-  }
+      
+      <style jsx>{`
+        .layout-wrapper {
+          //...
+        }
+      `}</style>
+    </>
+  );
 }
 
 export default Wrapper;

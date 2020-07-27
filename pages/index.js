@@ -1,17 +1,24 @@
 import Head from 'next/head';
+import Link from 'next/link';
+import { useState, useEffect } from 'react';
 
-class Home extends React.Component {
-  
-  render () {
-    return (
-      <>
+function Home() {
 
-        <h1>NextJS Base.</h1>
-        <p>Future website here.</p>
+  useEffect(() => {
+    // runs on first render only
+  }, []);
 
-      </>
-    );
-  }
+  return (
+    <>
+
+      <h1>NextJS Base</h1>
+      
+      <style jsx>{`
+        //...
+      `}</style>
+
+    </>
+  );
 }
 
 export default Home;
