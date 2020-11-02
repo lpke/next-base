@@ -1,16 +1,31 @@
+@import "styles/mixins.scss";
+@import "styles/fonts.scss";
+
 :root {
   --light-text: #e3e3e3;
   --dark-text: #202020;
 }
 
 * {
-  font-family: sans-serif;
   box-sizing: border-box;
+  font-family: "Roboto", "Fira Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 html, body {
   padding: 0;
   margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Fira Sans";
+  font-weight: 500;
+}
+
+p, div, a, img {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 400;
 }
 
 p {
