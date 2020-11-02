@@ -13,7 +13,7 @@ function Home() {
         <div className="container">
           <h1>NextJS Base</h1>
 
-          <p>A base structure for NextJS projects.</p>
+          <p>A base structure for web projects.</p>
         </div>
       </div>
 
