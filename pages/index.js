@@ -1,19 +1,17 @@
-import { useState, useEffect } from "react";
+import Page from "layouts/page";
 
 function Home() {
-  useEffect(() => {
-    // runs on first render only
-  }, []);
-
-  // @refresh reset
   return (
     <>
-      <div className="container">
-        <h1>NextJS Base</h1>
+      <Page name="Home">
 
-        <p>A base structure for web projects.</p>
+        <div className="container">
+          <h1>NextJS Base</h1>
 
-      </div>
+          <p>A base structure for web projects.</p>
+        </div>
+
+      </Page>
 
       <style jsx>{`
         @import "styles/mixins.scss";
@@ -27,7 +25,7 @@ function Home() {
             margin-top: 0;
             margin-bottom: 26px;
             font-size: 80px;
-            text-shadow: 0px 3px 18px rgba(0,0,0,0.1);
+            text-shadow: 0px 3px 18px rgba(0, 0, 0, 0.1);
           }
 
           p {

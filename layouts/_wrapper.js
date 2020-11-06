@@ -1,7 +1,4 @@
-import { useState, useEffect } from 'react';
-
 function Wrapper(props) {
-  
   return (
     <>
       <div className="layout-wrapper">

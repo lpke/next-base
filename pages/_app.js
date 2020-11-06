@@ -2,25 +2,23 @@ import React from "react";
 import Head from "next/head";
 import Wrapper from "layouts/_wrapper";
 import "styles/global.scss";
+import { ViewportProvider } from "lib/hooks/use-viewport";
 
-class App extends React.Component {
-  render() {
-    let Component = this.props.Component;
-    let pageProps = this.props.pageProps;
+function App({ Component, pageProps }) {
+  return (
+    <>
+      <Head>
+        <title>Website</title> {/* Can be overwritten */}
+        <link rel="icon" href="/icons/favicons/default-favicon.ico" />
+      </Head>
 
-    return (
-      <>
-        <Head>
-          <title>Website</title>
-          {/*<link rel="icon" href="" />*/}
-        </Head>
-
+      <ViewportProvider>
         <Wrapper>
           <Component {...pageProps} />
         </Wrapper>
-      </>
-    );
-  }
+      </ViewportProvider>
+    </>
+  );
 }
 
 export default App;
