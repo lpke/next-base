@@ -4,7 +4,7 @@
 :root {
   --light-text: #ebebeb;
   --dark-text: #202020;
-  --accent-color: #9b0954;
+  --accent-color: #04AFE3;
 }
 
 * {
@@ -20,13 +20,13 @@ html, body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Fira Sans";
-  color: var(--accent-color);
   margin: 1em 0;
 }
 
 h1 {
   font-size: 58px;
   font-weight: 700;
+  color: var(--accent-color);
 }
 
 h2 {
