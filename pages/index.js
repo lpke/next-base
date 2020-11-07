@@ -1,16 +1,17 @@
 import Page from "layouts/page";
+import Link from "next/link";
 
 function Home() {
   return (
     <>
       <Page name="Home">
-
         <div className="container">
           <h1>NextJS Base</h1>
 
           <p>A base structure for web projects.</p>
-        </div>
 
+          <Link href="/test">Test Page</Link>
+        </div>
       </Page>
 
       <style jsx>{`
@@ -25,7 +26,7 @@ function Home() {
             margin-top: 0;
             margin-bottom: 26px;
             font-size: 80px;
-            text-shadow: 0px 3px 18px rgba(0, 0, 0, 0.1);
+            text-shadow: 0px 3px 18 px rgba(0, 0, 0, 0.1);
           }
 
           p {
