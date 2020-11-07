@@ -1,15 +1,13 @@
-import Page from "layouts/page";
 import Link from "next/link";
 
+const pageName = "Test Page";
 function TestPage() {
   
   return (
     <>
-      <Page name="Test">
-        <p>Test page.</p>
+      <p>Test page.</p>
 
-        <Link href="/">Home</Link>
-      </Page>
+      <Link href="/">Home</Link>
 
       <style jsx>{`
         //...
@@ -19,3 +17,9 @@ function TestPage() {
 }
 
 export default TestPage;
+
+export async function getStaticProps(context) {
+  return {
+    props: { pageName },
+  };
+}

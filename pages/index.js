@@ -1,18 +1,16 @@
-import Page from "layouts/page";
 import Link from "next/link";
 
+const pageName = "Home Page";
 function Home() {
   return (
     <>
-      <Page name="Home">
-        <div className="container">
-          <h1>NextJS Base</h1>
+      <div className="container">
+        <h1>NextJS Base</h1>
 
-          <p>A base structure for web projects.</p>
+        <p>A base structure for web projects.</p>
 
-          <Link href="/test">Test Page</Link>
-        </div>
-      </Page>
+        <Link href="/test">Test Page</Link>
+      </div>
 
       <style jsx>{`
         @import "styles/mixins.scss";
@@ -39,3 +37,9 @@ function Home() {
 }
 
 export default Home;
+
+export async function getStaticProps(context) {
+  return {
+    props: { pageName },
+  };
+}
