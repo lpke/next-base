@@ -15,6 +15,9 @@ function App({ Component, pageProps }) {
   useEffect(() => {
     TagManager.initialize({
       gtmId: "GTM-TCKFPTP",
+      dataLayer: {
+        test: "hello",
+      }
     });
   }, []);
 
