@@ -10,6 +10,8 @@
 
 ## File/Folder Organisation Strategy
 
+> Note: I've used `.gitkeep` files in otherwise empty folders so that they are not ignored when pushing. They can be safely deleted.
+
 The `src` directory is optionally used to keep the project congruous with many other types of project repositories.
 
 For semantics, the `src/app` directory contains all files. To keep routes and shared components/helpers seperate:
