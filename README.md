@@ -33,12 +33,12 @@ For semantics, the `src/app` directory contains all files. To keep routes and sh
 In `tsconfig.json`, path aliases have been set to best accomodate the folder organisation strategy, keeping imports clean.
 
 - `src/app/*` → `@/*`
-- `src/app/_utils/*` → `@utils/*`
-- `src/app/_types/*` → `@types/*`
-- `src/app/_hooks/*` → `@hooks/*`
-- `src/app/_styles/*` → `@styles/*`
-- `src/app/(routes)/*` → `@routes/*`
-- `src/app/_components/*` → `@components/*`
+- `src/app/_utils/*` → `@/utils/*`
+- `src/app/_types/*` → `@/types/*`
+- `src/app/_hooks/*` → `@/hooks/*`
+- `src/app/_styles/*` → `@/styles/*`
+- `src/app/(routes)/*` → `@/routes/*`
+- `src/app/_components/*` → `@/components/*`
 
 ## ESLint
 
