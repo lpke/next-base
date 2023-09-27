@@ -36,6 +36,9 @@ module.exports = {
     'react/no-unescaped-entities': 'off',
     'react/self-closing-comp': 'off',
     'jsx-a11y/anchor-ambiguous-text': 'off',
+    'jsx-a11y/label-has-for': 'off', // deprecated
+    'import/prefer-default-export': 'off',
+    'react/require-default-props': 'off',
     // downgrades from error to warn
     'no-unused-vars': 'warn',
     'prefer-const': 'warn',
@@ -43,6 +46,7 @@ module.exports = {
     'spaced-comment': 'warn',
     'no-multi-spaces': 'warn',
     'import/newline-after-import': 'warn',
+    'lines-around-directive': 'warn',
     'react/button-has-type': 'warn',
     '@typescript-eslint/no-unused-vars': 'warn',
     // remaining jsx-a11y rules are downgraded to warn
@@ -63,8 +67,12 @@ module.exports = {
     'jsx-a11y/iframe-has-title': 'warn',
     'jsx-a11y/img-redundant-alt': 'warn',
     'jsx-a11y/interactive-supports-focus': 'warn',
-    'jsx-a11y/label-has-associated-control': 'warn',
-    'jsx-a11y/label-has-for': 'warn',
+    'jsx-a11y/label-has-associated-control': [
+      'warn',
+      {
+        assert: 'htmlFor',
+      },
+    ],
     'jsx-a11y/lang': 'warn',
     'jsx-a11y/media-has-caption': 'warn',
     'jsx-a11y/mouse-events-have-key-events': 'warn',
