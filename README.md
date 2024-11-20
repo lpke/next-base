@@ -1,6 +1,6 @@
 # A Sensible, Clean NextJS Base
 
-- ✅ NextJS 14.2 (app router)
+- ✅ NextJS 15 (using app router)
 - ✅ Typescript
 - ✅ Tailwind
 - ✅ MDX Support
